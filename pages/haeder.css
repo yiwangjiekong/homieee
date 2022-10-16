@@ -1,0 +1,142 @@
+header {
+  width: 100%;
+  height: 50px;
+  /* 阴影 */
+  box-shadow: var(--box-shoadow-common);
+
+  background-color: #fff;
+
+  margin-bottom: var(--margin-s);
+}
+
+.header-content {
+  /* border: 1px solid red; */
+
+  width: 1280px;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  /* 居中 */
+  margin: 0 auto;
+}
+
+.header-content .header-content__logo {
+  margin-right: var(--margin-m);
+}
+
+.header-content .header-content__menu {
+  display: flex;
+}
+
+.header-content .header-content__menu li {
+  margin-right: var(--margin-m);
+  color: var(--text-color-grey);
+
+  /* 改变鼠标形状 */
+  cursor: pointer;
+
+  /* 动画 */
+  transition: 0.25s color ease-in-out;
+}
+
+.header-content .header-content__menu li a {
+  color: var(--text-color-grey);
+}
+
+.header-content .header-content__menu li.active a {
+  color: var(--text-color-black);
+}
+
+.header-content .header-content__menu li:hover {
+  color: var(--text-color-black);
+}
+
+.header-content .header-content__menu li.active {
+  color: var(--text-color-black);
+  font-weight: bold;
+  position: relative;
+}
+
+.header-content .header-content__menu li.active::after {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--theme-blue-color-1);
+  bottom: -13px;
+  left: 0;
+}
+
+.header-content__search {
+  display: flex;
+  flex: 1;
+  margin-right: var(--margin-m);
+}
+
+.header-content__search .header-content__search-inner {
+  width: 100%;
+  display: flex;
+  padding: 0 14px; /* 边框 */
+  height: 32px;
+  border-radius: 14px;
+  background-color: #f6f6f6;
+  margin-right: var(--margin-s);
+  /* 设置变量  宽度 */
+  border: 1px solid #ccc;
+
+  align-items: center;
+}
+
+.header-content__search .header-content__search-inner span {
+  margin-top: 3px;
+}
+
+.header-content__search .header-content__search-inner input {
+  /* height: 100%; */
+  flex: 1;
+}
+
+.header-content__search button {
+  width: 70px;
+  padding: 6px 9px;
+
+  cursor: pointer;
+
+  border-radius: 14px;
+  color: #fff;
+
+  background-color: var(--theme-blue-color-1);
+  transition: 0.25s background-color ease-in-out;
+}
+
+.header-content__search button:hover {
+  background-color: var(--theme-blue-color-hover);
+}
+
+.header-content__tools {
+  display: flex;
+}
+
+.header-content__tools-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--margin-s);
+  font-size: 12px;
+  color: var(--text-color-grey);
+}
+
+.header-content__avator {
+  width: 34px;
+}
+
+.header-content__avator img {
+  width: 100%;
+  border-radius: 3px;
+}

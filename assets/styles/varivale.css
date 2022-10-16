@@ -1,0 +1,12 @@
+:root {
+  --margin-s: 22px;
+  --margin-m: 32px;
+
+  --text-color-grey: #8590a6;
+  --text-color-black: #121212;
+
+  --theme-blue-color-1: rgb(5, 109, 232);
+  --theme-blue-color-hover: rgb(41, 122, 220);
+
+  --box-shoadow-common: 0 1px 3px rgb(18 18 18 / 10%);
+}
