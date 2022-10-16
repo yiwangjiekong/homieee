@@ -50,7 +50,7 @@ header {
   color: var(--text-color-black);
 }
 
-.header-content .header-content__menu li:hover {
+.header-content .header-content__menu li:hover a {
   color: var(--text-color-black);
 }
 
